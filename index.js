@@ -24,8 +24,10 @@ modual.exports = {
    * @return {Array} List of pokemon.
    */
   getPokemon: function() {
-    var data = getData(pokeUrl);
-    return data.pokemon;
+    var data = getData(pokeUrl + '/api/v1/pokedex/1/');
+    for (var key in data.pokemon) {
+      return data.pokemon[key];
+    }
   },
 
 };
