@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/TheTommyTwitch/pokedex/issues"
   },
-  "homepage": "https://github.com/TheTommyTwitch/pokedex#readme"
+  "homepage": "https://github.com/TheTommyTwitch/pokedex#readme",
+  "dependencies": {
+    "request": "^2.65.0"
+  }
 }

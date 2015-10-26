@@ -18,4 +18,14 @@ modual.exports = {
       });
   },
 
+  /**
+   * Get data from pokeapi.
+   *
+   * @return {Array} List of pokemon.
+   */
+  getPokemon: function() {
+    var data = getData(pokeUrl);
+    return data.pokemon;
+  },
+
 };
