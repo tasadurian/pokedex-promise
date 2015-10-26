@@ -1,0 +1,24 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "A small library used to get information about specific pokemon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheTommyTwitch/pokedex.git"
+  },
+  "keywords": [
+    "pokedex",
+    "pokemon",
+    "nintendo"
+  ],
+  "author": "Thomas Asadurian <Tasadurian@gmail.com> (http://thetommytwitch.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheTommyTwitch/pokedex/issues"
+  },
+  "homepage": "https://github.com/TheTommyTwitch/pokedex#readme"
+}
