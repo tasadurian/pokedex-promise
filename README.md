@@ -15,3 +15,11 @@ Import to your project.
 ```js
 var pokedex = require('pokedex');
 ```
+
+## Usage
+
+Want to get a list of pokemon?
+```js
+var pokemonList = pokedex.getPokemon();
+//returns an array of pokemon.
+```
