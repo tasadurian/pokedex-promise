@@ -28,4 +28,13 @@ modual.exports = {
     return data.pokemon;
   },
 
+  /**
+   * Get specific data from pokeapi.
+   * @param {Int} Number of the pokemon you want.
+   * @return {Array} List of pokemon.
+   */
+  getPokemonById: function(numberId) {
+    var url = 'http://pokeapi.co/api/v1/pokemon/' + this.numberId + '/';
+  },
+
 };
