@@ -37,7 +37,7 @@ modual.exports = {
    * @return {String} or {Array}
    */
   getPokemonDataById: function(numberId, param) {
-    var url = 'http://pokeapi.co/api/v1/pokemon/' + this.numberId + '/';
+    var url = pokeUrl + '/api/v1/pokemon/' + numberId + '/';
     var data = getData(url);
 
     if (param === "abilities") {
