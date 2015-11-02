@@ -30,11 +30,19 @@ modual.exports = {
 
   /**
    * Get specific data from pokeapi.
-   * @param {Int} Number of the pokemon you want.
-   * @return {Array} List of pokemon.
+   * @param {Int} ID number of the pokemon you want.
+   * @param {String} Which peice of info you want.
+   * abilities, attack, catch_rate, defense, exp, height,
+   * hp, moves, name, speed, weight.
+   * @return {String} or {Array}
    */
-  getPokemonById: function(numberId) {
+  getPokemonDataById: function(numberId, param) {
     var url = 'http://pokeapi.co/api/v1/pokemon/' + this.numberId + '/';
+    var data = getData(url);
+
+    if (param === "abilities") {
+      return data.abilities;
+    }
   },
 
 };
