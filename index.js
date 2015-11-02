@@ -40,8 +40,11 @@ modual.exports = {
     var url = pokeUrl + '/api/v1/pokemon/' + numberId + '/';
     var data = getData(url);
 
-    if (param === "abilities") {
-      return data.abilities;
+    switch (param) {
+      case abilities:
+        return data.abilities;
+      case attack:
+        return data.attack;
     }
   },
 
