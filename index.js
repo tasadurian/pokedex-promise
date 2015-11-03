@@ -1,6 +1,6 @@
 var request = require('request');
 
-modual.exports = {
+module.exports = {
   pokeUrl: 'http://pokeapi.co',
 
   /**
@@ -32,7 +32,7 @@ modual.exports = {
    * Get specific data from pokeapi.
    * @param {Int} ID number of the pokemon you want.
    * @param {String} Which peice of info you want.
-   * abilities, attack, catch_rate, defense, exp, height,
+   * abilities, attack, catchRate, defense, exp, height,
    * hp, moves, name, speed, weight.
    * @return {String} or {Array}
    */
@@ -45,6 +45,12 @@ modual.exports = {
         return data.abilities;
       case attack:
         return data.attack;
+      case catchRate:
+        return data.catch_rate;
+      case defense:
+        return data.defense;
+      case exp:
+        return data.experiance;
     }
   },
 
