@@ -1,22 +1,20 @@
 var request = require('request');
 
+var getData = function(url) {
+  return request({
+      url: url,
+      json: true
+    },
+    function(error, response, body) {
+      if (!error && response.statusCode == 200) {
+        return body;
+      }
+    });
+};
+
 module.exports = {
   pokeUrl: 'http://pokeapi.co',
 
-  /**
-   * Get data from pokeapi.
-   *
-   * @param  {String} url
-   * @return {String} JSON data
-   */
-  getData: function(url) {
-    request(url,
-      function(error, response, body) {
-        if (!error && response.statusCode == 200) {
-          return body;
-        }
-      });
-  },
 
   /**
    * Get data from pokeapi.
@@ -24,8 +22,8 @@ module.exports = {
    * @return {Array} List of pokemon.
    */
   getPokemon: function() {
-    var data = getData(pokeUrl + '/api/v1/pokedex/1/');
-    return data.pokemon;
+    var data = getData('http://pokeapi.co/api/v1/pokedex/1/');
+    return data;
   },
 
   /**
