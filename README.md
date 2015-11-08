@@ -23,3 +23,12 @@ Want to get a list of pokemon?
 var pokemonList = pokedex.getPokemon();
 //returns an array of pokemon.
 ```
+
+## Want to contribute?
+
+Make sure you have [node.js](https://nodejs.org/en/) installed.
+
+install gulp
+```
+npm install --global gulp
+```
