@@ -31,11 +31,6 @@ Make sure you have [node.js](https://nodejs.org/en/) installed. You can install 
 brew install node
 ```
 
-Install gulp.js
-```
-npm install --global gulp
-```
-
 Clone the repo!
 ```
 git clone https://github.com/TheTommyTwitch/pokedex.git
