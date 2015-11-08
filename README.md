@@ -26,9 +26,17 @@ var pokemonList = pokedex.getPokemon();
 
 ## Want to contribute?
 
-> Make sure you have [node.js](https://nodejs.org/en/) installed.
+Make sure you have [node.js](https://nodejs.org/en/) installed. You can install with Homebrew.
+```
+brew install node
+```
 
-> Install gulp.js
+Install gulp.js
 ```
 npm install --global gulp
+```
+
+Clone the repo!
+```
+git clone https://github.com/TheTommyTwitch/pokedex.git
 ```
