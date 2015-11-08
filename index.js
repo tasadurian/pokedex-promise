@@ -1,5 +1,7 @@
 var request = require('request');
 
+var pokeUrl = 'http://pokeapi.co';
+
 var getData = function(url) {
   return request({
       url: url,
@@ -13,13 +15,11 @@ var getData = function(url) {
 };
 
 module.exports = {
-  pokeUrl: 'http://pokeapi.co',
-
 
   /**
    * Get data from pokeapi.
    *
-   * @return {Array} List of pokemon.
+   * @return {JSON}
    */
   getPokemon: function() {
     var data = getData('http://pokeapi.co/api/v1/pokedex/1/');
@@ -29,27 +29,12 @@ module.exports = {
   /**
    * Get specific data from pokeapi.
    * @param {Int} ID number of the pokemon you want.
-   * @param {String} Which peice of info you want.
-   * abilities, attack, catchRate, defense, exp, height,
-   * hp, moves, name, speed, weight.
-   * @return {String} or {Array}
+   * @return {JSON}
    */
-  getPokemonDataById: function(numberId, param) {
+  getPokemonDataById: function(numberId) {
     var url = pokeUrl + '/api/v1/pokemon/' + numberId + '/';
     var data = getData(url);
-
-    switch (param) {
-      case abilities:
-        return data.abilities;
-      case attack:
-        return data.attack;
-      case catchRate:
-        return data.catch_rate;
-      case defense:
-        return data.defense;
-      case exp:
-        return data.experiance;
-    }
+    return data;
   },
 
 };
