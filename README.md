@@ -28,6 +28,10 @@ Want to get information on a specific pokemon?
 ```js
 var pokemon = getPokemonDataById(5).request.body;
 //returns json data about a pokemon with the id of 5.
+var name = pokemon.name;
+//returns "Charmeleon".
+var hp = pokemon.hp;
+//returns 58;
 ```
 
 ## Want to contribute?
