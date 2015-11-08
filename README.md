@@ -26,9 +26,9 @@ var pokemonList = pokedex.getPokemon();
 
 ## Want to contribute?
 
-Make sure you have [node.js](https://nodejs.org/en/) installed.
+> Make sure you have [node.js](https://nodejs.org/en/) installed.
 
-install gulp
+> Install gulp.js
 ```
 npm install --global gulp
 ```
