@@ -47,9 +47,4 @@ You can install with Homebrew.
 brew install node
 ```
 
-Clone the repo!
-```
-git clone https://github.com/TheTommyTwitch/pokedex.git
-```
-
 Submit a pull request!
