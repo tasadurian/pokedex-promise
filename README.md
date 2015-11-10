@@ -1,4 +1,5 @@
 # pokedex
+<img width="728" src="http://i.imgur.com/SHuavFt.png?1" alt="Demo">
 
 > An easy way to use [pokeapi](http://pokeapi.co/) in node.js
 
