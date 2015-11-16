@@ -41,14 +41,4 @@ var weight = pokemon.weight;
 
 ## Want to contribute?
 
-Make sure you have [node.js](https://nodejs.org/en/) installed.
-```
-node -v
-```
-
-You can install with Homebrew.
-```
-brew install node
-```
-
 Submit a pull request!
