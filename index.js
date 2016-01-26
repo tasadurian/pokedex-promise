@@ -1,40 +1,25 @@
-var request = require('request');
+var rp = require('request-promise');
 
-var pokeUrl = 'http://pokeapi.co';
+var Pokedex = (function() {
+  function Pokedex() {}
 
-var getData = function(url) {
-  return request({
-      url: url,
+  Pokedex.prototype.getJSON = function() {
+    var options = {
+      uri: 'http://pokeapi.co/api/v1/pokedex/1/',
       json: true
-    },
-    function(error, response, body) {
-      if (!error && response.statusCode == 200) {
-        return body;
-      }
-    });
-};
+    };
 
-module.exports = {
+    return rp(options)
+      .then(function(response) {
+        console.log('getting data');
+        return response;
+      })
+      .catch(function(err) {
+        console.log('GET failed');
+      });
+  };
+})();
 
-  /**
-   * Get data from pokeapi.
-   *
-   * @return {JSON}
-   */
-  getPokemon: function() {
-    var data = getData('http://pokeapi.co/api/v1/pokedex/1/');
-    return data;
-  },
 
-  /**
-   * Get specific data from pokeapi.
-   * @param {Int} ID number of the pokemon you want.
-   * @return {JSON}
-   */
-  getPokemonDataById: function(numberId) {
-    var url = pokeUrl + '/api/v1/pokemon/' + numberId + '/';
-    var data = getData(url);
-    return data;
-  },
 
-};
+module.exports = Pokedex;

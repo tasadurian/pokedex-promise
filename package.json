@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/TheTommyTwitch/pokedex#readme",
   "dependencies": {
-    "request": "^2.65.0"
+    "request": "^2.65.0",
+    "request-promise": "^2.0.0"
   }
 }
