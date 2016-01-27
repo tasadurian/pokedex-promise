@@ -23,6 +23,10 @@ var Pokedex = (function() {
     return getJSON(pokeUrl + '/api/v1/pokedex/1/');
   };
 
+  Pokedex.prototype.getPokemonById = function(id) {
+    return getJSON(pokeUrl + '/api/v1/pokemon/' + id + '/');
+  };
+
   return Pokedex;
 })();
 
