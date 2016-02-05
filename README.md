@@ -19,7 +19,23 @@ var pokedex = require('pokedex');
 
 ## Usage
 
-Currently under construction :)
+Initialize the constructor.
+```js
+var Pokedex = new Pokedex();
+```
+
+Use the getPokemonList function to return data about all Pokemon.
+```js
+router.get('/', function(req, res) {
+  Pokedex.getPokemonById(5)
+    .then(function(response) {
+      res.json(response);
+    })
+    .catch(function(error) {
+      console.log('There was an ERROR: ', error);
+    });
+});
+```
 
 ## Want to contribute?
 
