@@ -24,7 +24,21 @@ Initialize the constructor.
 var Pokedex = new Pokedex();
 ```
 
-Use the getPokemonList function to return data about all Pokemon.
+Use the getPokemonList function to return the names and resource_uri for all pokemon.
+```js
+router.get('/', function(req, res) {
+  Pokedex.getPokemonList
+    .then(function(response) {
+      res.json(response);
+    })
+    .catch(function(error) {
+      console.log('There was an ERROR: ', error);
+    });
+});
+```
+
+Use the getPokemonById function to return data on a specific pokemon.
+Note: the ID for Pokémon is special. Use the National pokédex number as the ID to return the desired resource.
 ```js
 router.get('/', function(req, res) {
   Pokedex.getPokemonById(5)
