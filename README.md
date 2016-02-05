@@ -51,6 +51,19 @@ router.get('/', function(req, res) {
 });
 ```
 
+A Type resource represent a single Pokémon type.
+```js
+router.get('/', function(req, res) {
+  Pokedex.getTypeById(5)
+    .then(function(response) {
+      res.json(response);
+    })
+    .catch(function(error) {
+      console.log('There was an ERROR: ', error);
+    });
+});
+```
+
 ## Want to contribute?
 
 Submit a pull request!
