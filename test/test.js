@@ -15,12 +15,23 @@ describe("pokedex", function() {
     before(function() {
       promise = P.getPokemonList();
     });
-
     it("should succeed", function() {
       return promise;
     });
     it("should have property pokemon", function() {
       return expect(promise).to.eventually.have.property("pokemon");
+    });
+  });
+
+  describe(".getPokemonById(Id: int)", function() {
+    before(function() {
+      promise = P.getPokemonById(id);
+    });
+    it("should succeed", function() {
+      return promise;
+    });
+    it("should have property pokemon", function() {
+      return expect(promise).to.eventually.have.property("name");
     });
   });
 });
