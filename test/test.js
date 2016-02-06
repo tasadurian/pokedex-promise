@@ -30,7 +30,7 @@ describe("pokedex", function() {
     it("should succeed", function() {
       return promise;
     });
-    it("should have property pokemon", function() {
+    it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
   });
@@ -42,7 +42,7 @@ describe("pokedex", function() {
     it("should succeed", function() {
       return promise;
     });
-    it("should have property pokemon", function() {
+    it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
   });
@@ -54,7 +54,7 @@ describe("pokedex", function() {
     it("should succeed", function() {
       return promise;
     });
-    it("should have property pokemon", function() {
+    it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
   });
@@ -66,7 +66,7 @@ describe("pokedex", function() {
     it("should succeed", function() {
       return promise;
     });
-    it("should have property pokemon", function() {
+    it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
   });
