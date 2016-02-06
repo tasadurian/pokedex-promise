@@ -49,6 +49,10 @@ describe("pokedex", function() {
     it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
+    it("should have id equal to passed in id", function() {
+      return expect(promise).to.eventually.have.property("id")
+        .and.equal(id);
+    });
   });
 
   describe(".getMoveById(Id: int)", function() {
@@ -60,6 +64,10 @@ describe("pokedex", function() {
     });
     it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
+    });
+    it("should have id equal to passed in id", function() {
+      return expect(promise).to.eventually.have.property("id")
+        .and.equal(id);
     });
   });
 
@@ -73,6 +81,10 @@ describe("pokedex", function() {
     it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
+    it("should have id equal to passed in id", function() {
+      return expect(promise).to.eventually.have.property("id")
+        .and.equal(id);
+    });
   });
 
   describe(".getEggById(Id: int)", function() {
@@ -84,6 +96,10 @@ describe("pokedex", function() {
     });
     it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
+    });
+    it("should have id equal to passed in id", function() {
+      return expect(promise).to.eventually.have.property("id")
+        .and.equal(id);
     });
   });
 
@@ -97,6 +113,10 @@ describe("pokedex", function() {
     it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
+    it("should have id equal to passed in id", function() {
+      return expect(promise).to.eventually.have.property("id")
+        .and.equal(id);
+    });
   });
 
   describe(".getSpriteById(Id: int)", function() {
@@ -108,6 +128,10 @@ describe("pokedex", function() {
     });
     it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
+    });
+    it("should have id equal to passed in id", function() {
+      return expect(promise).to.eventually.have.property("id")
+        .and.equal(id);
     });
   });
 });
