@@ -82,4 +82,16 @@ describe("pokedex", function() {
       return expect(promise).to.eventually.have.property("name");
     });
   });
+
+  describe(".getDescriptionById(Id: int)", function() {
+    before(function() {
+      promise = P.getDescriptionById(id);
+    });
+    it("should succeed", function() {
+      return promise;
+    });
+    it("should have property name", function() {
+      return expect(promise).to.eventually.have.property("name");
+    });
+  });
 });
