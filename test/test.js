@@ -46,4 +46,28 @@ describe("pokedex", function() {
       return expect(promise).to.eventually.have.property("name");
     });
   });
+
+  describe(".getMoveById(Id: int)", function() {
+    before(function() {
+      promise = P.getMoveById(id);
+    });
+    it("should succeed", function() {
+      return promise;
+    });
+    it("should have property pokemon", function() {
+      return expect(promise).to.eventually.have.property("name");
+    });
+  });
+
+  describe(".getAbilityById(Id: int)", function() {
+    before(function() {
+      promise = P.getAbilityById(id);
+    });
+    it("should succeed", function() {
+      return promise;
+    });
+    it("should have property pokemon", function() {
+      return expect(promise).to.eventually.have.property("name");
+    });
+  });
 });
