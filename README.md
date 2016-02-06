@@ -13,7 +13,7 @@ npm install pokedex-promise
 
 Import to your project.
 ```js
-var Pokedex = require('pokedex');
+var Pokedex = require('pokedex-promise');
 ```
 
 ## Usage
