@@ -1,6 +1,6 @@
 {
   "name": "pokedex-promise",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small library used to get information about specific pokemon.",
   "main": "index.js",
   "scripts": {
