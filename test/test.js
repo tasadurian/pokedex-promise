@@ -34,4 +34,16 @@ describe("pokedex", function() {
       return expect(promise).to.eventually.have.property("name");
     });
   });
+
+  describe(".getTypeById(Id: int)", function() {
+    before(function() {
+      promise = P.getTypeById(id);
+    });
+    it("should succeed", function() {
+      return promise;
+    });
+    it("should have property pokemon", function() {
+      return expect(promise).to.eventually.have.property("name");
+    });
+  });
 });

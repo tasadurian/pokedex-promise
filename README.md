@@ -14,20 +14,20 @@ npm install **todo not published yet**
 
 Import to your project.
 ```js
-var pokedex = require('pokedex');
+var Pokedex = require('pokedex');
 ```
 
 ## Usage
 
 Initialize the constructor.
 ```js
-var Pokedex = new Pokedex();
+var P = new Pokedex();
 ```
 
 Use **getPokemonList** to return the names and resource_uri for all pokemon.
 ```js
 router.get('/', function(req, res) {
-  Pokedex.getPokemonList
+  P.getPokemonList
     .then(function(response) {
       res.json(response);
     })
@@ -41,7 +41,7 @@ Use **getPokemonById** to return data on a specific pokemon.
 Note: the ID for Pokémon is special. Use the National pokédex number as the ID to return the desired resource.
 ```js
 router.get('/', function(req, res) {
-  Pokedex.getPokemonById(5)
+  P.getPokemonById(5)
     .then(function(response) {
       res.json(response);
     })
@@ -54,7 +54,7 @@ router.get('/', function(req, res) {
 Use **getTypeById** to return data about a specific type. A Type resource represent a single Pokémon type.
 ```js
 router.get('/', function(req, res) {
-  Pokedex.getTypeById(5)
+  P.getTypeById(5)
     .then(function(response) {
       res.json(response);
     })
