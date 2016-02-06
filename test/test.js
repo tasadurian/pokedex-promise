@@ -33,6 +33,10 @@ describe("pokedex", function() {
     it("should have property name", function() {
       return expect(promise).to.eventually.have.property("name");
     });
+    it("should have id equal to passed in id", function() {
+      return expect(promise).to.eventually.have.property(
+        "national_id").and.equal(id);
+    });
   });
 
   describe(".getTypeById(Id: int)", function() {
