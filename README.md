@@ -6,7 +6,7 @@
 
 You can install with npm!
 ```
-npm install **todo not published yet**
+npm install pokedex-promise
 ```
 
 ## Setup
