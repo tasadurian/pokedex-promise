@@ -1,5 +1,7 @@
 # pokedex-promise
 
+### The v1 api has been depreciated. Check out [pokedex-promise-v2](https://github.com/PokeAPI/pokedex-promise-v2).
+
 [![npm version](https://badge.fury.io/js/pokedex-promise.svg)](https://badge.fury.io/js/pokedex-promise)
 [![Build Status](https://travis-ci.org/TheTommyTwitch/pokedex-promise.svg?branch=master)](https://travis-ci.org/TheTommyTwitch/pokedex-promise)
 
